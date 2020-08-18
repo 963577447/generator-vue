@@ -5,7 +5,7 @@ module.exports = class extends Generator{
         return this.prompt([{
             type:'input',
             name:'name',
-            message: 'your project name',
+            message: 'your project name:',
             default: this.appname
         }])
         .then(answers => {
